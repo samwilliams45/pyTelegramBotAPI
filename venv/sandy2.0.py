@@ -3,7 +3,6 @@ import telebot
 
 API_KEY = os.getenv('5608601651:AAHY_d3XgJ14UeEvbT44CWYnexE1UWpIhRQ')
 bot = telebot.TeleBot(API_KEY)
-data = staging.list(header="100M")
 #start command
 @bot.message_handler(command=['start'])
 def start(message):
