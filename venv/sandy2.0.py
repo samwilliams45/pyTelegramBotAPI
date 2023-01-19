@@ -1,8 +1,10 @@
-import os
+import time
 import telebot
+from telebot import types
 
-API_KEY = os.getenv('5608601651:AAHY_d3XgJ14UeEvbT44CWYnexE1UWpIhRQ')
-bot = telebot.TeleBot(API_KEY)
+bot_token = '5608601651:AAHY_d3XgJ14UeEvbT44CWYnexE1UWpIhRQ'
+bot = telebot.TeleBot(token=bot_token)
+
 #start command
 @bot.message_handler(command=['start'])
 def start(message):
@@ -18,4 +20,3 @@ def help(message):
 #request = message.text.split()[1]
 #data = 
 bot.polling()
-
