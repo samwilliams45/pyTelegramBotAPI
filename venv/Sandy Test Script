@@ -1,0 +1,8 @@
+import time
+
+import telebot
+from telebot import types
+
+bot_token = '5608601651:AAHY_d3XgJ14UeEvbT44CWYnexE1UWpIhRQ'
+bot = telebot.TeleBot(token=bot_token)
+
