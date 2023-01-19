@@ -6,10 +6,10 @@ bot_token = '5608601651:AAHY_d3XgJ14UeEvbT44CWYnexE1UWpIhRQ'
 bot = telebot.TeleBot(token=bot_token)
 
 #start command
-@bot.message_handler(command=['start'])
-def start(message):
-    bot.reply_to(message, "Enter the text you want to show to the user whenever they start the bot")
-
+@bot.message_handler(commands=['start'])
+def send_welcome (message):
+	bot.reply_to(message, 'Welcome! MUFUCKA! :D!')
+    
 #sending a message and not replying to a message
 @bot.message_handler(command=['hello'])
 def help(message):
