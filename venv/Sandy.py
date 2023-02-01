@@ -1,6 +1,7 @@
 import time
-import telebot
+import telebot   
 from telebot import types
+
 bot = telebot.TeleBot("5608601651:AAHY_d3XgJ14UeEvbT44CWYnexE1UWpIhRQ")
 commands = {"checkin": "Check in a truck",
             "list": "Show the current list of orders",
